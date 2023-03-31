@@ -1,6 +1,6 @@
 function Square(props) {
   return (
-    <button onClick = {props.onIncrease}> {props.count} </button>
+    <button onClick={()=>props.onClickButton(props.id)}> {props.num} </button>
   );
 }
 

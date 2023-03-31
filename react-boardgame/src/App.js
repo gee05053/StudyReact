@@ -1,8 +1,10 @@
-import RenderSquare from './RenderSqaure'
+import RenderSquare from './RenderSqaure';
 
 function App() {
   return (
-    <RenderSquare/>
+    <content>
+      <RenderSquare/>
+    </content>
   );
 }
 
