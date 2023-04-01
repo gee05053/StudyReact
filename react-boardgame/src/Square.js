@@ -1,6 +1,7 @@
+import { Button } from 'antd'
 function Square(props) {
   return (
-    <button onClick={()=>props.onClickButton(props.id)}> {props.num} </button>
+    <Button style={{width:"100px", height:"100px"}} onClick={()=>props.onClickButton(props.id)}> {props.num} </Button>
   );
 }
 

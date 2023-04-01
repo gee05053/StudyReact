@@ -2,9 +2,9 @@ import RenderSquare from './RenderSqaure';
 
 function App() {
   return (
-    <content>
+    <div>
       <RenderSquare/>
-    </content>
+    </div>
   );
 }
 
