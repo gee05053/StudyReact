@@ -1,6 +1,7 @@
 import { Layout, Divider } from 'antd';
 import Header from '../components/header';
 import Navbar from '../components/navbar';
+import LoginForm from '../components/loginForm';
 
 function Homepage() {
   return(
@@ -8,6 +9,7 @@ function Homepage() {
       <Header/>
       <Divider/>
       <Navbar/>
+      <LoginForm/>
     </Layout>
   );
 }
