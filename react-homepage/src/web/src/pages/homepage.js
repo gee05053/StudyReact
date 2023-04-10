@@ -1,14 +1,12 @@
-import { Layout, Divider } from 'antd';
 import Header from '../components/header';
 import Navbar from '../components/navbar';
 
 function Homepage() {
   return(
-    <Layout>
+    <div>
       <Header/>
-      <Divider/>
       <Navbar/>
-    </Layout>
+    </div>
   );
 }
 

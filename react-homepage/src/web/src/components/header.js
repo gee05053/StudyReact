@@ -1,4 +1,4 @@
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button, Divider } from 'antd';
 import homeMark from '../Image/homeMark.png';
 import chant from '../Image/chant.png';
 
@@ -25,20 +25,26 @@ if (day < 10) {
 const stringDate = year + "-" + month + "-" + day +'(' + week + ')';
 function Header() {
   return (
-    <Row align="top">
-      <Col span={2}/>
-      <Col span={8}>
-        <img src={chant} alt="chant" style={{width:250}}/>
+    <Row align="bottom">
+      <Col span={2}>
+        <Divider/>
       </Col>
-      <Col span={8}>
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        {"\u00A0"}
-        <img src={homeMark} alt="logo" style={{width:250}}/>
+      <Col span={7}>
+        <img src={chant} alt="chant" style={{width:350}}/>
+        <Divider/>
       </Col>
-      <Col span={6}>
+      <Col span={5}>
+        {"\u00A0"}
+        {"\u00A0"}
+        {"\u00A0"}
+        {"\u00A0"}
+        {"\u00A0"}
+        <img src={homeMark} alt="logo" style={{width:420}}/>
+      </Col>
+      <Col span={3}>
+        <Divider/>
+      </Col>
+      <Col span={7}>
         <Button type="text">
           홈으로
         </Button>
@@ -52,6 +58,7 @@ function Header() {
         {"\u00A0"}
         {"\u00A0"}
         {stringDate}
+        <Divider/>
       </Col>
     </Row>
   );
