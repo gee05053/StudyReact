@@ -5,16 +5,21 @@ function Navbar() {
   return(
     <div>
       <Row align="bottom">
-        <Col span={1}/>
-        {menuList.map((menuName, index) => {
-          return(
-            <Col span={3} key={index}>
-              <div style={{fontSize:"22px"}}>
-                {menuName}
-              </div>
-            </Col>
-          )
-        })}
+        <Col span={3}/>
+        <Col span={17} >
+          <Row>
+            {menuList.map((menuName, index) => {
+              return(
+                <Col span={3} key={index}>
+                  <div style={{fontSize:"22px"}}>
+                    {menuName}
+                  </div>
+                </Col>
+              )
+            })}
+          </Row>
+        </Col>
+        <Col span={4}/>
       </Row>
       <div style={{backgroundColor: "blue", height:"25px"}}>
         {"\u00A0"}
