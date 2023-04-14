@@ -2,7 +2,7 @@ import { Badge, Button, Card, Row, Col } from 'antd';
 
 function FavoritesService () {
   return (
-    <Card size="small" title="자주찾는서비스">
+    <Card size="small" title="자주찾는서비스" extra={<a href="#test">+더보기</a>}>
       <Row>
         <Col span={12}>
           <Button type="link">
