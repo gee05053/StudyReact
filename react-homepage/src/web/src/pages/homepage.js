@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Navbar from '../components/navbar';
 import LoginForm from '../components/loginForm';
 import FavoritesService from '../components/favoritesService';
+import Notice from '../components/notice';
 
 function Homepage() {
   return(
@@ -33,12 +34,12 @@ function Homepage() {
       <Row>
         <Col span={2}/>
         <Col span={20}>
-          <Row>
+          <Row gutter={16}>
             <Col span={5}>
               <FavoritesService/>
             </Col>
             <Col span={12}>
-              공지사항
+              <Notice/>
             </Col>
             <Col span={7}>
               날씨
@@ -48,7 +49,7 @@ function Homepage() {
             </Col>
           </Row>
         </Col>
-        <Col span={2}/>
+        <Col span={3}/>
       </Row>
     </div>
   );
