@@ -4,6 +4,7 @@ import Navbar from '../components/navbar';
 import LoginForm from '../components/loginForm';
 import FavoritesService from '../components/favoritesService';
 import Notice from '../components/notice';
+import Vanner from '../components/vanner'
 import talk from '../Image/talk.png';
 import news from '../Image/news.jpg';
 
@@ -21,14 +22,15 @@ function Homepage() {
           <Row>
             <Col span={5}>
               <LoginForm/>
-              <img src={talk} alt="talk" style={{ width: "100%" }}/>
+              <img src={talk} alt="talk"/>
             </Col>
             <Col span={12}>
-              여단 뉴스
+              <img src={news} alt="news"/>
             </Col>
-            <Col span={7}>
-              여단 배너
+            <Col span={6}>
+              <Vanner/>
             </Col>
+            <Col span={1}/>
           </Row>
         </Col>
         <Col span={2}/>
@@ -37,11 +39,11 @@ function Homepage() {
       <Row>
         <Col span={2}/>
         <Col span={20}>
-          <Row gutter={16}>
+          <Row>
             <Col span={5}>
               <FavoritesService/>
             </Col>
-            <Col span={12}>
+            <Col span={12} style={{ paddingLeft: "1%" }}>
               <Notice/>
             </Col>
             <Col span={7}>
