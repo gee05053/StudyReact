@@ -2,11 +2,11 @@ import { Button, Card, Input, Row, Col } from 'antd';
 
 function LoginForm() {
   return(
-    <Card style={{width: "96%"}}>
+    <Card style={{width: "100%"}}>
       <Row gutter={[20,60]}>
         <Col span={16}>
-          <Input placeholder='군번' style={{ width:170 }}/>
-          <Input.Password placeholder='육군 이메일 비밀번호' style={{ width:170 }}/>
+          <Input placeholder='군번' style={{ width:"103%" }}/>
+          <Input.Password placeholder='육군 이메일 비밀번호' style={{ width:"103%" }}/>
         </Col>
         <Col span={8}>
           <Button style={{ height: 64}}>
