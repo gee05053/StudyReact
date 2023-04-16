@@ -4,6 +4,8 @@ import Navbar from '../components/navbar';
 import LoginForm from '../components/loginForm';
 import FavoritesService from '../components/favoritesService';
 import Notice from '../components/notice';
+import talk from '../Image/talk.png';
+import news from '../Image/news.jpg';
 
 function Homepage() {
   return(
@@ -19,9 +21,10 @@ function Homepage() {
           <Row>
             <Col span={5}>
               <LoginForm/>
+              <img src={talk} alt="talk" style={{ width: "100%" }}/>
             </Col>
             <Col span={12}>
-              여단 배경
+              여단 뉴스
             </Col>
             <Col span={7}>
               여단 배너
