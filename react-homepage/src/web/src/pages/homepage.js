@@ -7,6 +7,7 @@ import Notice from '../components/notice';
 import Vanner from '../components/vanner';
 import Weather from '../components/weather';
 import CyberAlert from '../components/cyberAlert';
+import WorksMenu from '../components/worksMenu';
 import talk from '../Image/talk.png';
 import news from '../Image/news.jpg';
 import corona19 from '../Image/corona19.png';
@@ -61,16 +62,17 @@ function Homepage() {
               <img src={dream} alt="dream" style={{ width: "100%", height: "15%" }}/>
               <img src={safe5eng} alt="safe5eng" style={{ width: "100%", height: "15%" }}/>
             </Col>
-            <Col span={2}/>
+            <Col span={1}/>
           </Row>
         </Col>
-        <Col span={3}/>
+        <Col span={2}/>
       </Row>
       <Row>
-        주요업무
-        업무참고
-        정보마당
-        신고/상담
+        <Col span={2}/>
+        <Col span={20}>
+          <WorksMenu/>
+        </Col>
+        <Col span={2}/>
       </Row>
     </div>
   );
