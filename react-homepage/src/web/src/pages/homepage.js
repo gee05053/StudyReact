@@ -28,19 +28,18 @@ function Homepage() {
           <Row>
             <Col span={5}>
               <LoginForm/>
-              <img src={talk} alt="talk"/>
+              <img src={talk} alt="talk" style={{ width: '100%', height: '43%' }} />
             </Col>
-            <Col span={12}>
-              <img src={news} alt="news"/>
+            <Col span={11}>
+              <img src={news} alt="news" style={{ width: '100%', height: '100%' }}/>
             </Col>
             <Col span={6}>
               <Vanner/>
             </Col>
-            <Col span={1}/>
+            <Col span={2}/>
           </Row>
         </Col>
         <Col span={2}/>
-        {"\u00A0"}
       </Row>
       <Row>
         <Col span={2}/>
@@ -50,7 +49,7 @@ function Homepage() {
               <FavoritesService/>
               <img src={corona19} alt="corona19" style={{ width: "100%" }}/>
             </Col>
-            <Col span={12} style={{ paddingLeft: "1%" }}>
+            <Col span={11} style={{ paddingLeft: '0.5%', paddingRight: '0.5%' }}>
               <Notice/>
             </Col>
             <Col span={6}>
@@ -62,7 +61,7 @@ function Homepage() {
               <img src={dream} alt="dream" style={{ width: "100%", height: "15%" }}/>
               <img src={safe5eng} alt="safe5eng" style={{ width: "100%", height: "15%" }}/>
             </Col>
-            <Col span={1}/>
+            <Col span={2}/>
           </Row>
         </Col>
         <Col span={2}/>

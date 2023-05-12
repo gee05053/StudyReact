@@ -2,7 +2,7 @@ import { Card, Row, Col, Button, Badge } from 'antd';
 
 function WorksMenu() {
   return (
-    <Card bordered={false} bodyStyle={{ padding: "0", width: "96%" }}>
+    <Card bordered={false} bodyStyle={{ padding: '0' }}>
       <Row>
         <Col span={4}>
           <Card type="inner" title="주요업무">
@@ -160,7 +160,7 @@ function WorksMenu() {
             </div>
           </Card>
         </Col>
-        <Col span={4}>
+        <Col span={6}>
           <Card type="inner" title="부대활동">
             test
           </Card>

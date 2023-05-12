@@ -6,7 +6,7 @@ function Navbar() {
     <div>
       <Row align="bottom">
         <Col span={3}/>
-        <Col span={17} >
+        <Col span={18} >
           <Row>
             {menuList.map((menuName, index) => {
               return(
@@ -19,7 +19,7 @@ function Navbar() {
             })}
           </Row>
         </Col>
-        <Col span={4}/>
+        <Col span={3}/>
       </Row>
       <div style={{backgroundColor: "blue", height:"25px"}}>
         {"\u00A0"}
