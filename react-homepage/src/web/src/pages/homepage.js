@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import { Row, Col } from 'antd';
 import Header from '../components/header';
 import Navbar from '../components/navbar';
-import LoginForm from '../components/loginForm';
+import LoginBeforeForm from '../components/login/loginBeforeForm';
+import LoginAfterForm from '../components/login/loginAfterFrom';
 import FavoritesService from '../components/favoritesService';
 import Notice from '../components/notice';
 import Vanner from '../components/vanner';
@@ -15,6 +17,10 @@ import dream from '../Image/Dream.png';
 import safe5eng from '../Image/safe5eng.png';
 
 function Homepage() {
+  const [ isLoginSuccess, setLoginSuccess ] = useState(false);
+  const onChangeLoginSuccess = (bool) => {
+    setLoginSuccess(bool);
+  }
   return(
     <div>
       <Header/>
@@ -27,8 +33,8 @@ function Homepage() {
         <Col span={20}>
           <Row>
             <Col span={5}>
-              <LoginForm/>
-              <img src={talk} alt="talk" style={{ width: '100%', height: '43%' }} />
+              {isLoginSuccess ? <LoginAfterForm onChangeLoginSuccess={onChangeLoginSuccess}/> : <LoginBeforeForm onChangeLoginSuccess={onChangeLoginSuccess}/>}
+              <img src={talk} alt="talk" style={{ width: '100%', height: '100%' }} />
             </Col>
             <Col span={11}>
               <img src={news} alt="news" style={{ width: '100%', height: '100%' }}/>
