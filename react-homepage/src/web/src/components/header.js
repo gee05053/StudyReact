@@ -1,4 +1,5 @@
 import { Row, Col, Button, Divider } from 'antd';
+import { Link } from 'react-router-dom';
 import homeMark from '../Image/homeMark.png';
 import chant from '../Image/chant.png';
 
@@ -39,14 +40,16 @@ function Header() {
         {"\u00A0"}
         {"\u00A0"}
         {"\u00A0"}
-        <img src={homeMark} alt="logo" style={{width:420}}/>
+        <Link to="/">
+          <img src={homeMark} alt="logo" style={{width:420}}/>
+        </Link>
       </Col>
       <Col span={3}>
         <Divider/>
       </Col>
       <Col span={7}>
         <Button type="text">
-          홈으로
+          <Link to="/test">홈으로</Link>
         </Button>
         |
         <Button type="text">
