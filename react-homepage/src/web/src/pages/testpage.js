@@ -6,4 +6,4 @@ function Testpage () {
   );
 }
 
-export default Testpage
+export default Testpage;
