@@ -34,7 +34,7 @@ function Homepage() {
           <Row>
             <Col span={5}>
               {isLoginSuccess ? <LoginAfterForm onChangeLoginSuccess={onChangeLoginSuccess}/> : <LoginBeforeForm onChangeLoginSuccess={onChangeLoginSuccess}/>}
-              <img src={talk} alt="talk" style={{ width: '100%', height: '100%' }} />
+              <img src={talk} alt="talk" style={{ width: '100%', height: '45%' }} />
             </Col>
             <Col span={11}>
               <img src={news} alt="news" style={{ width: '100%', height: '100%' }}/>
